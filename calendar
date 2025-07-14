@@ -3,10 +3,10 @@
 <head>
   <meta http-equiv="x-ua-compatible" content="IE=Edge" />
   <meta charset="utf-8">
-  <title>Jura Docs</title>
+  <title>Gestor de Archivos</title>
   <HTA:APPLICATION
     ID="JuraDocsApp"
-    APPLICATIONNAME="Jura Docs"
+    APPLICATIONNAME="Gestor de Archivos"
     BORDER="dialog"
     CAPTION="yes"
     SHOWINTASKBAR="yes"
@@ -63,7 +63,7 @@
     .title-main {
         display: flex;
         align-items: center;
-        font-size: 1.3em; /* Tamaño del nombre principal */
+        font-size: 1.0em; /* Tamaño del nombre principal */
         font-weight: 700;
         color: #fff;
         letter-spacing: 0.5px; /* Reducido un poco para que quepa mejor */
@@ -1686,7 +1686,7 @@
     }
 
     .tarjeta-creacion-descripcion {
-      font-size: 0.9em;
+      font-size: 0.8em;
       color: #5a6773;
       margin-bottom: 15px;
       min-height: 40px; /* Para alinear descripciones de longitud variable */
@@ -1845,8 +1845,7 @@
   <nav class="sidebar">
     <div class="title">
         <span class="title-main">
-            <span class="title-icon">&lt;/&gt;</span> 
-            Jura Docs
+            Gestor de Archivos
         </span>
         <span class="title-version">v1.0</span>
     </div>
@@ -1937,7 +1936,7 @@
         <div class="tarjeta-creacion" id="tarjeta-crear-anio" onclick="activarTarjetaCreacion('anio')">
           <div class="tarjeta-creacion-icono">📅</div>
           <div class="tarjeta-creacion-titulo">Nuevo Año</div>
-          <div class="tarjeta-creacion-descripcion">Crea una nueva carpeta para un año fiscal o contable.</div>
+          <div class="tarjeta-creacion-descripcion">Crea una nueva carpeta donde se almacenará todos lo que respecta al año.</div>
           <div class="tarjeta-creacion-campos" id="campos-crear-anio">
             <div class="field-block">
               <label class="field-label" for="input-anio-crear">Año (Ej: 2025)</label>
@@ -1952,7 +1951,7 @@
         <div class="tarjeta-creacion" id="tarjeta-crear-caso" onclick="activarTarjetaCreacion('caso')">
           <div class="tarjeta-creacion-icono">📁</div>
           <div class="tarjeta-creacion-titulo">Nuevo Caso</div>
-          <div class="tarjeta-creacion-descripcion">Registra una nueva carpeta de caso dentro de un año existente.</div>
+          <div class="tarjeta-creacion-descripcion">Registra una nueva carpeta general (Derechos de petición, intervención juzgados, etc).</div>
           <div class="tarjeta-creacion-campos" id="campos-crear-caso">
             <div class="field-block">
               <label class="field-label" for="select-anio-caso-crear">Año para el Caso</label>
@@ -1971,7 +1970,7 @@
         <div class="tarjeta-creacion" id="tarjeta-crear-subcaso" onclick="activarTarjetaCreacion('subcaso')">
           <div class="tarjeta-creacion-icono">📄</div>
           <div class="tarjeta-creacion-titulo">Nuevo Subcaso</div>
-          <div class="tarjeta-creacion-descripcion">Añade un subcaso o detalle a una carpeta de caso existente.</div>
+          <div class="tarjeta-creacion-descripcion">Añade un nuevo usuario.</div>
           <div class="tarjeta-creacion-campos" id="campos-crear-subcaso">
             <!-- Fila 1: Año y Caso -->
             <div class="tarjeta-campos-fila">
